@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.HistoryFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_cover_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/cover_history"/>
+
+                <ImageView
+                    android:id="@+id/overlay_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/overlay" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_history_images"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Историја"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:text="Во триесеттите години на минатиот век, на излезот од кањонот Матка е изградено вештачко езеро на реката Треска, со бетонска брана, за производство на електрична енергија. Градежните работи на браната започнале во 1935 година, а хидроцентралата започнала со работа во 1938 година со инсталиран капацитет од 4,2 MW. Изградбата била обемна и бил колективен потфат, капитален проект на своето време, но најзаслужен за нејзината изградба е проф. Д-р Миладин Пеќинар идејниот автор на проектот, проектант и човекот што вршел надзор на изградбата. Кога браната била готова Пеќинар застанал на нејзиниот врв и извикал: „Ако отиде браната нека отиде со неа и тој што ја замислил“. За време на Втората светска војна токму ХЕЦ Матка била еден од стратешките објекти околу која се воделе битки. Таа била цел на бомбардирање во текот на воените операции, при повекувањето на фашистичките сили. Дури имало и обид за нејзино минирање но, група партизани херојски ја одбраниле Матка. Браната на хидроцентралата Матка неколку пати го спасила и Скопје од поплави и тоа за време на големата полава во 1962 година и во 1979 кога браната задржала голерма количина на вода и придонела за спречување на поголеми катастрофи. Хидроцентралата Матка денес е дел од производството на обновлива енергија на ЕВН во Македонија. Во 2008 година е направена реконструкција и е изградена комплетно нова хидроцентрала. Со изградбата на нова машинска зграда, лоцирана во непосредна близина, старата машинска зграда престана со функција, по што во 2016 година е пренаменета во едукативно-изложбен центар."
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

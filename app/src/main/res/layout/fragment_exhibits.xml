@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.ExhibitsFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/eksponati_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cover_eksponati"/>
+
+                <ImageView
+                    android:id="@+id/overlay_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/overlay" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="МАТКА ИЗЛОЖБЕН ЦЕНТАР"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Изложбениот центар Матка е единствен едукативен центар во Македонија што се бави со енергетски теми. Во него посетителите преку современи интерактивни методи може да научат повеќе за енергијата, нејзината историја, производство, пренос и користење."
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ЕКСПОНАТИ"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_exhibits"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>

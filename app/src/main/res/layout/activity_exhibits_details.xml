@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ExhibitDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/exhibit_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/overlay_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitEnd"
+                android:src="@drawable/overlay" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/exhibit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Приказ на електродистрибутивен систем"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="-20dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/exibit_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="Откријте го патот на електричната енергија од моментот на производство сè до нејзината финална дестинација во нашите домови, во фабриките, болниците, училиштата…."
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
